@@ -1,2 +1,4 @@
 /target/
 /bin/
+mylog.log.*.gz
+mylog.log
