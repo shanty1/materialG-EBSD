@@ -1,0 +1,945 @@
+2020-11-19 19:26:07.590  INFO 12044 --- [main] per.sc.mg.service.Neo4jServiceTest       : Starting Neo4jServiceTest on DESKTOP-B0O1DU2 with PID 12044 (started by 实验室 in F:\GithubRepository\materialG-EDSB)
+2020-11-19 19:26:07.594  INFO 12044 --- [main] per.sc.mg.service.Neo4jServiceTest       : No active profile set, falling back to default profiles: default
+2020-11-19 19:26:08.159  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:26:08.161  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:26:08.338  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169ms. Found 2 repository interfaces.
+2020-11-19 19:26:08.350  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:26:08.351  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:26:08.386  INFO 12044 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.BoundRelationRepository.
+2020-11-19 19:26:08.387  INFO 12044 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.GrainRepository.
+2020-11-19 19:26:08.387  INFO 12044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-11-19 19:26:08.689  INFO 12044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df81016f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-19 19:26:09.379  INFO 12044 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2020-11-19 19:26:09.379  INFO 12044 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2020-11-19 19:26:09.379  INFO 12044 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 81 classes
+2020-11-19 19:26:09.389  INFO 12044 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2020-11-19 19:26:09.393  WARN 12044 --- [main] org.neo4j.ogm.metadata.ClassInfo         : Failed to find an @StartNode on per.sc.mg.entity.po.WeakBoundRelation
+2020-11-19 19:26:09.393  WARN 12044 --- [main] o.n.o.m.schema.DomainInfoSchemaBuilder   : Start or end node not found for classInfo=org.neo4j.ogm.metadata.ClassInfo@5f172d4a, is the metadata correct?
+2020-11-19 19:26:09.440  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.http.client.CookieStore.cookies
+2020-11-19 19:26:09.459  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.errorEnabled
+2020-11-19 19:26:09.459  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.name
+2020-11-19 19:26:09.459  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.infoEnabled
+2020-11-19 19:26:09.459  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.debugEnabled
+2020-11-19 19:26:09.460  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.traceEnabled
+2020-11-19 19:26:09.460  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.warnEnabled
+2020-11-19 19:26:09.522  INFO 12044 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2020-11-19 19:26:09.535  INFO 12044 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class java.io.File so treating as simple type for SD Commons
+2020-11-19 19:26:09.542  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLengthLong
+2020-11-19 19:26:09.542  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.scheme
+2020-11-19 19:26:09.542  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteHost
+2020-11-19 19:26:09.543  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.reader
+2020-11-19 19:26:09.543  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncStarted
+2020-11-19 19:26:09.543  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverName
+2020-11-19 19:26:09.543  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterNames
+2020-11-19 19:26:09.543  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locale
+2020-11-19 19:26:09.544  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.secure
+2020-11-19 19:26:09.544  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverPort
+2020-11-19 19:26:09.544  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.protocol
+2020-11-19 19:26:09.544  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.attributeNames
+2020-11-19 19:26:09.545  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncSupported
+2020-11-19 19:26:09.545  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentType
+2020-11-19 19:26:09.545  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localAddr
+2020-11-19 19:26:09.545  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterMap
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteAddr
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localPort
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.servletContext
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remotePort
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.inputStream
+2020-11-19 19:26:09.546  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localName
+2020-11-19 19:26:09.547  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locales
+2020-11-19 19:26:09.547  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.dispatcherType
+2020-11-19 19:26:09.547  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLength
+2020-11-19 19:26:09.547  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.characterEncoding
+2020-11-19 19:26:09.547  WARN 12044 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncContext
+2020-11-19 19:26:09.571  INFO 12044 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2020-11-19 19:26:10.204  INFO 12044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:26:10.249  WARN 12044 --- [main] ebConfiguration$Neo4jWebMvcConfiguration : spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2020-11-19 19:26:10.926  WARN 12044 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-19 19:26:10.990  INFO 12044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 19:26:22.706 ERROR 12044 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.isEnabled(AbstractDataSourceInitializer.java:74) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.initialize(AbstractDataSourceInitializer.java:54) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_271]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_271]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_271]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_271]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_271]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 69 common frames omitted
+
+2020-11-19 19:26:22.744  INFO 12044 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-11-19 19:26:22.756  INFO 12044 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-11-19 19:26:22.757  INFO 12044 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-11-19 19:26:22.757  INFO 12044 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-11-19 19:26:22.758  INFO 12044 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-11-19 19:26:22.758  INFO 12044 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-11-19 19:26:22.758  INFO 12044 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-11-19 19:26:22.758  INFO 12044 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@361cd35c
+2020-11-19 19:26:22.788  WARN 12044 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-19 19:26:22.872  INFO 12044 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-11-19 19:26:22.872  INFO 12044 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-11-19 19:26:22.879  INFO 12044 --- [main] per.sc.mg.service.Neo4jServiceTest       : Started Neo4jServiceTest in 15.495 seconds (JVM running for 16.202)
+2020-11-19 19:26:38.458  INFO 12044 --- [main] Driver                                   : Direct driver instance 244838677 created for server address 192.168.31.64:7687
+2020-11-19 19:26:43.893  INFO 12044 --- [main] ConnectionPool                           : Closing connection pool towards 192.168.31.64:7687
+2020-11-19 19:26:46.128  INFO 12044 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:26:46.129  INFO 12044 --- [Thread-3] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-11-19 19:26:46.130  INFO 12044 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-11-19 19:26:46.130  INFO 12044 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:26:46.130  INFO 12044 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-11-19 19:26:46.139  INFO 12044 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:29:20.558  INFO 14004 --- [main] per.sc.mg.service.Neo4jServiceTest       : Starting Neo4jServiceTest on DESKTOP-B0O1DU2 with PID 14004 (started by 实验室 in F:\GithubRepository\materialG-EDSB)
+2020-11-19 19:29:20.559  INFO 14004 --- [main] per.sc.mg.service.Neo4jServiceTest       : No active profile set, falling back to default profiles: default
+2020-11-19 19:29:21.074  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:29:21.076  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:29:21.234  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151ms. Found 2 repository interfaces.
+2020-11-19 19:29:21.243  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:29:21.244  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:29:21.275  INFO 14004 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.BoundRelationRepository.
+2020-11-19 19:29:21.276  INFO 14004 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.GrainRepository.
+2020-11-19 19:29:21.276  INFO 14004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-11-19 19:29:21.567  INFO 14004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc35f2ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-19 19:29:22.153  INFO 14004 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2020-11-19 19:29:22.154  INFO 14004 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2020-11-19 19:29:22.154  INFO 14004 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 81 classes
+2020-11-19 19:29:22.163  INFO 14004 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2020-11-19 19:29:22.167  WARN 14004 --- [main] org.neo4j.ogm.metadata.ClassInfo         : Failed to find an @StartNode on per.sc.mg.entity.po.WeakBoundRelation
+2020-11-19 19:29:22.167  WARN 14004 --- [main] o.n.o.m.schema.DomainInfoSchemaBuilder   : Start or end node not found for classInfo=org.neo4j.ogm.metadata.ClassInfo@49ec6a9f, is the metadata correct?
+2020-11-19 19:29:22.212  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.http.client.CookieStore.cookies
+2020-11-19 19:29:22.230  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.errorEnabled
+2020-11-19 19:29:22.231  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.name
+2020-11-19 19:29:22.231  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.infoEnabled
+2020-11-19 19:29:22.231  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.debugEnabled
+2020-11-19 19:29:22.231  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.traceEnabled
+2020-11-19 19:29:22.231  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.warnEnabled
+2020-11-19 19:29:22.294  INFO 14004 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2020-11-19 19:29:22.306  INFO 14004 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class java.io.File so treating as simple type for SD Commons
+2020-11-19 19:29:22.313  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLengthLong
+2020-11-19 19:29:22.314  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.scheme
+2020-11-19 19:29:22.314  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteHost
+2020-11-19 19:29:22.314  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.reader
+2020-11-19 19:29:22.314  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncStarted
+2020-11-19 19:29:22.315  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverName
+2020-11-19 19:29:22.315  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterNames
+2020-11-19 19:29:22.315  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locale
+2020-11-19 19:29:22.315  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.secure
+2020-11-19 19:29:22.315  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverPort
+2020-11-19 19:29:22.316  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.protocol
+2020-11-19 19:29:22.316  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.attributeNames
+2020-11-19 19:29:22.317  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncSupported
+2020-11-19 19:29:22.317  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentType
+2020-11-19 19:29:22.317  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localAddr
+2020-11-19 19:29:22.317  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterMap
+2020-11-19 19:29:22.317  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteAddr
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localPort
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.servletContext
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remotePort
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.inputStream
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localName
+2020-11-19 19:29:22.318  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locales
+2020-11-19 19:29:22.319  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.dispatcherType
+2020-11-19 19:29:22.319  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLength
+2020-11-19 19:29:22.319  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.characterEncoding
+2020-11-19 19:29:22.319  WARN 14004 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncContext
+2020-11-19 19:29:22.342  INFO 14004 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2020-11-19 19:29:22.977  INFO 14004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:29:23.023  WARN 14004 --- [main] ebConfiguration$Neo4jWebMvcConfiguration : spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2020-11-19 19:29:23.710  WARN 14004 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-19 19:29:23.782  INFO 14004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 19:29:35.548 ERROR 14004 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.isEnabled(AbstractDataSourceInitializer.java:74) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.initialize(AbstractDataSourceInitializer.java:54) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_271]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_271]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_271]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_271]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_271]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 69 common frames omitted
+
+2020-11-19 19:29:35.583  INFO 14004 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-11-19 19:29:35.594  INFO 14004 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-11-19 19:29:35.594  INFO 14004 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-11-19 19:29:35.595  INFO 14004 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-11-19 19:29:35.595  INFO 14004 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-11-19 19:29:35.595  INFO 14004 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-11-19 19:29:35.595  INFO 14004 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-11-19 19:29:35.596  INFO 14004 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6f85ee02
+2020-11-19 19:29:35.622  WARN 14004 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-19 19:29:35.698  INFO 14004 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-11-19 19:29:35.698  INFO 14004 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-11-19 19:29:35.705  INFO 14004 --- [main] per.sc.mg.service.Neo4jServiceTest       : Started Neo4jServiceTest in 15.326 seconds (JVM running for 15.998)
+2020-11-19 19:29:51.002  INFO 14004 --- [main] Driver                                   : Direct driver instance 710699894 created for server address 192.168.31.64:7687
+2020-11-19 19:29:53.432  INFO 14004 --- [main] ConnectionPool                           : Closing connection pool towards 192.168.31.64:7687
+2020-11-19 19:29:55.666  INFO 14004 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:29:55.667  INFO 14004 --- [Thread-3] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-11-19 19:29:55.667  INFO 14004 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-11-19 19:29:55.667  INFO 14004 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:29:55.667  INFO 14004 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-11-19 19:29:55.676  INFO 14004 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:31:19.310  INFO 2716 --- [main] per.sc.mg.service.Neo4jServiceTest       : Starting Neo4jServiceTest on DESKTOP-B0O1DU2 with PID 2716 (started by 实验室 in F:\GithubRepository\materialG-EDSB)
+2020-11-19 19:31:19.311  INFO 2716 --- [main] per.sc.mg.service.Neo4jServiceTest       : No active profile set, falling back to default profiles: default
+2020-11-19 19:31:19.831  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:31:19.832  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:31:19.988  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 2 repository interfaces.
+2020-11-19 19:31:19.998  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:31:19.999  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:31:20.026  INFO 2716 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.BoundRelationRepository.
+2020-11-19 19:31:20.027  INFO 2716 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.GrainRepository.
+2020-11-19 19:31:20.027  INFO 2716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-11-19 19:31:20.321  INFO 2716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e199fc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-19 19:31:20.939  INFO 2716 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2020-11-19 19:31:20.940  INFO 2716 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2020-11-19 19:31:20.940  INFO 2716 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 81 classes
+2020-11-19 19:31:20.949  INFO 2716 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2020-11-19 19:31:20.953  WARN 2716 --- [main] org.neo4j.ogm.metadata.ClassInfo         : Failed to find an @StartNode on per.sc.mg.entity.po.WeakBoundRelation
+2020-11-19 19:31:20.953  WARN 2716 --- [main] o.n.o.m.schema.DomainInfoSchemaBuilder   : Start or end node not found for classInfo=org.neo4j.ogm.metadata.ClassInfo@6884f0d9, is the metadata correct?
+2020-11-19 19:31:20.997  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.http.client.CookieStore.cookies
+2020-11-19 19:31:21.016  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.errorEnabled
+2020-11-19 19:31:21.017  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.name
+2020-11-19 19:31:21.017  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.infoEnabled
+2020-11-19 19:31:21.017  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.debugEnabled
+2020-11-19 19:31:21.017  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.traceEnabled
+2020-11-19 19:31:21.018  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.warnEnabled
+2020-11-19 19:31:21.078  INFO 2716 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2020-11-19 19:31:21.090  INFO 2716 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class java.io.File so treating as simple type for SD Commons
+2020-11-19 19:31:21.098  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLengthLong
+2020-11-19 19:31:21.098  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.scheme
+2020-11-19 19:31:21.098  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteHost
+2020-11-19 19:31:21.098  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.reader
+2020-11-19 19:31:21.098  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncStarted
+2020-11-19 19:31:21.099  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverName
+2020-11-19 19:31:21.099  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterNames
+2020-11-19 19:31:21.099  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locale
+2020-11-19 19:31:21.099  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.secure
+2020-11-19 19:31:21.099  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverPort
+2020-11-19 19:31:21.100  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.protocol
+2020-11-19 19:31:21.100  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.attributeNames
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncSupported
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentType
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localAddr
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterMap
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteAddr
+2020-11-19 19:31:21.101  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localPort
+2020-11-19 19:31:21.102  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.servletContext
+2020-11-19 19:31:21.102  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remotePort
+2020-11-19 19:31:21.102  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.inputStream
+2020-11-19 19:31:21.102  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localName
+2020-11-19 19:31:21.102  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locales
+2020-11-19 19:31:21.103  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.dispatcherType
+2020-11-19 19:31:21.103  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLength
+2020-11-19 19:31:21.103  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.characterEncoding
+2020-11-19 19:31:21.103  WARN 2716 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncContext
+2020-11-19 19:31:21.125  INFO 2716 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2020-11-19 19:31:21.766  INFO 2716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:31:21.809  WARN 2716 --- [main] ebConfiguration$Neo4jWebMvcConfiguration : spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2020-11-19 19:31:22.516  WARN 2716 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-19 19:31:22.590  INFO 2716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 19:31:34.273 ERROR 2716 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.isEnabled(AbstractDataSourceInitializer.java:74) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.initialize(AbstractDataSourceInitializer.java:54) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_271]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_271]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_271]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_271]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_271]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 69 common frames omitted
+
+2020-11-19 19:31:34.308  INFO 2716 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-11-19 19:31:34.319  INFO 2716 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-11-19 19:31:34.319  INFO 2716 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-11-19 19:31:34.319  INFO 2716 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-11-19 19:31:34.320  INFO 2716 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-11-19 19:31:34.320  INFO 2716 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-11-19 19:31:34.320  INFO 2716 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-11-19 19:31:34.320  INFO 2716 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7f8a9454
+2020-11-19 19:31:34.347  WARN 2716 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-19 19:31:34.429  INFO 2716 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-11-19 19:31:34.429  INFO 2716 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-11-19 19:31:34.435  INFO 2716 --- [main] per.sc.mg.service.Neo4jServiceTest       : Started Neo4jServiceTest in 15.302 seconds (JVM running for 15.967)
+2020-11-19 19:31:49.860  INFO 2716 --- [main] Driver                                   : Direct driver instance 1880741401 created for server address 192.168.31.64:7687
+2020-11-19 19:31:55.283  INFO 2716 --- [main] ConnectionPool                           : Closing connection pool towards 192.168.31.64:7687
+2020-11-19 19:31:57.510  INFO 2716 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:31:57.511  INFO 2716 --- [Thread-3] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-11-19 19:31:57.511  INFO 2716 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-11-19 19:31:57.511  INFO 2716 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:31:57.511  INFO 2716 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-11-19 19:31:57.520  INFO 2716 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:32:39.519  INFO 4960 --- [main] per.sc.mg.service.Neo4jServiceTest       : Starting Neo4jServiceTest on DESKTOP-B0O1DU2 with PID 4960 (started by 实验室 in F:\GithubRepository\materialG-EDSB)
+2020-11-19 19:32:39.520  INFO 4960 --- [main] per.sc.mg.service.Neo4jServiceTest       : No active profile set, falling back to default profiles: default
+2020-11-19 19:32:40.035  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:32:40.037  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:32:40.195  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152ms. Found 2 repository interfaces.
+2020-11-19 19:32:40.205  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:32:40.206  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:32:40.238  INFO 4960 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.BoundRelationRepository.
+2020-11-19 19:32:40.239  INFO 4960 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.GrainRepository.
+2020-11-19 19:32:40.239  INFO 4960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2020-11-19 19:32:40.529  INFO 4960 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a449d10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-19 19:32:41.118  INFO 4960 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2020-11-19 19:32:41.119  INFO 4960 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2020-11-19 19:32:41.119  INFO 4960 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 81 classes
+2020-11-19 19:32:41.128  INFO 4960 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2020-11-19 19:32:41.132  WARN 4960 --- [main] org.neo4j.ogm.metadata.ClassInfo         : Failed to find an @StartNode on per.sc.mg.entity.po.WeakBoundRelation
+2020-11-19 19:32:41.132  WARN 4960 --- [main] o.n.o.m.schema.DomainInfoSchemaBuilder   : Start or end node not found for classInfo=org.neo4j.ogm.metadata.ClassInfo@6a4ccef7, is the metadata correct?
+2020-11-19 19:32:41.175  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.http.client.CookieStore.cookies
+2020-11-19 19:32:41.195  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.errorEnabled
+2020-11-19 19:32:41.195  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.name
+2020-11-19 19:32:41.195  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.infoEnabled
+2020-11-19 19:32:41.195  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.debugEnabled
+2020-11-19 19:32:41.196  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.traceEnabled
+2020-11-19 19:32:41.196  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.warnEnabled
+2020-11-19 19:32:41.257  INFO 4960 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2020-11-19 19:32:41.270  INFO 4960 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class java.io.File so treating as simple type for SD Commons
+2020-11-19 19:32:41.277  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLengthLong
+2020-11-19 19:32:41.277  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.scheme
+2020-11-19 19:32:41.277  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteHost
+2020-11-19 19:32:41.278  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.reader
+2020-11-19 19:32:41.278  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncStarted
+2020-11-19 19:32:41.278  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverName
+2020-11-19 19:32:41.278  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterNames
+2020-11-19 19:32:41.278  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locale
+2020-11-19 19:32:41.279  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.secure
+2020-11-19 19:32:41.279  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverPort
+2020-11-19 19:32:41.279  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.protocol
+2020-11-19 19:32:41.279  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.attributeNames
+2020-11-19 19:32:41.280  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncSupported
+2020-11-19 19:32:41.280  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentType
+2020-11-19 19:32:41.280  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localAddr
+2020-11-19 19:32:41.280  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterMap
+2020-11-19 19:32:41.280  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteAddr
+2020-11-19 19:32:41.281  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localPort
+2020-11-19 19:32:41.281  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.servletContext
+2020-11-19 19:32:41.281  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remotePort
+2020-11-19 19:32:41.281  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.inputStream
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localName
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locales
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.dispatcherType
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLength
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.characterEncoding
+2020-11-19 19:32:41.282  WARN 4960 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncContext
+2020-11-19 19:32:41.305  INFO 4960 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2020-11-19 19:32:41.936  INFO 4960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:32:41.980  WARN 4960 --- [main] ebConfiguration$Neo4jWebMvcConfiguration : spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2020-11-19 19:32:42.659  WARN 4960 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-19 19:32:42.731  INFO 4960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 19:32:54.406 ERROR 4960 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.isEnabled(AbstractDataSourceInitializer.java:74) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.initialize(AbstractDataSourceInitializer.java:54) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_271]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_271]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_271]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_271]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_271]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 69 common frames omitted
+
+2020-11-19 19:32:54.440  INFO 4960 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-11-19 19:32:54.451  INFO 4960 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-11-19 19:32:54.451  INFO 4960 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-11-19 19:32:54.451  INFO 4960 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-11-19 19:32:54.452  INFO 4960 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-11-19 19:32:54.452  INFO 4960 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-11-19 19:32:54.452  INFO 4960 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-11-19 19:32:54.452  INFO 4960 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5ec6fede
+2020-11-19 19:32:54.485  WARN 4960 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-19 19:32:54.566  INFO 4960 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-11-19 19:32:54.566  INFO 4960 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-11-19 19:32:54.574  INFO 4960 --- [main] per.sc.mg.service.Neo4jServiceTest       : Started Neo4jServiceTest in 15.236 seconds (JVM running for 15.907)
+2020-11-19 19:33:09.767  INFO 4960 --- [main] Driver                                   : Direct driver instance 1394241900 created for server address 192.168.31.64:7687
+2020-11-19 19:33:15.184  INFO 4960 --- [main] ConnectionPool                           : Closing connection pool towards 192.168.31.64:7687
+2020-11-19 19:33:17.419  INFO 4960 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:33:17.420  INFO 4960 --- [Thread-3] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-11-19 19:33:17.420  INFO 4960 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-11-19 19:33:17.420  INFO 4960 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:33:17.420  INFO 4960 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-11-19 19:33:17.429  INFO 4960 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:35:55.978  INFO 12504 --- [main] per.sc.mg.service.Neo4jServiceTest       : Starting Neo4jServiceTest on DESKTOP-B0O1DU2 with PID 12504 (started by 实验室 in F:\GithubRepository\materialG-EDSB)
+2020-11-19 19:35:55.979  INFO 12504 --- [main] per.sc.mg.service.Neo4jServiceTest       : No active profile set, falling back to default profiles: default
+2020-11-19 19:35:56.492  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:35:56.494  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:35:56.651  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151ms. Found 2 repository interfaces.
+2020-11-19 19:35:56.660  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-19 19:35:56.661  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-19 19:35:56.694  INFO 12504 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.BoundRelationRepository.
+2020-11-19 19:35:56.695  INFO 12504 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface per.sc.mg.repositor.GrainRepository.
+2020-11-19 19:35:56.695  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-11-19 19:35:56.987  INFO 12504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b161f35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-19 19:35:57.581  INFO 12504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Starting Post-processing phase
+2020-11-19 19:35:57.581  INFO 12504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building annotation class map
+2020-11-19 19:35:57.581  INFO 12504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Building interface class map for 81 classes
+2020-11-19 19:35:57.591  INFO 12504 --- [main] org.neo4j.ogm.metadata.DomainInfo        : Post-processing complete
+2020-11-19 19:35:57.594  WARN 12504 --- [main] org.neo4j.ogm.metadata.ClassInfo         : Failed to find an @StartNode on per.sc.mg.entity.po.WeakBoundRelation
+2020-11-19 19:35:57.595  WARN 12504 --- [main] o.n.o.m.schema.DomainInfoSchemaBuilder   : Start or end node not found for classInfo=org.neo4j.ogm.metadata.ClassInfo@11a8042c, is the metadata correct?
+2020-11-19 19:35:57.639  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.apache.http.client.CookieStore.cookies
+2020-11-19 19:35:57.658  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.errorEnabled
+2020-11-19 19:35:57.658  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.name
+2020-11-19 19:35:57.659  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.infoEnabled
+2020-11-19 19:35:57.659  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.debugEnabled
+2020-11-19 19:35:57.659  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.traceEnabled
+2020-11-19 19:35:57.659  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: org.slf4j.Logger.warnEnabled
+2020-11-19 19:35:57.721  INFO 12504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class org.springframework.jdbc.core.JdbcTemplate so treating as simple type for SD Commons
+2020-11-19 19:35:57.734  INFO 12504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : No class information found in OGM meta-data for class java.io.File so treating as simple type for SD Commons
+2020-11-19 19:35:57.741  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLengthLong
+2020-11-19 19:35:57.741  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.scheme
+2020-11-19 19:35:57.741  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteHost
+2020-11-19 19:35:57.741  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.reader
+2020-11-19 19:35:57.742  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncStarted
+2020-11-19 19:35:57.742  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverName
+2020-11-19 19:35:57.742  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterNames
+2020-11-19 19:35:57.742  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locale
+2020-11-19 19:35:57.742  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.secure
+2020-11-19 19:35:57.743  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.serverPort
+2020-11-19 19:35:57.743  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.protocol
+2020-11-19 19:35:57.743  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.attributeNames
+2020-11-19 19:35:57.743  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncSupported
+2020-11-19 19:35:57.743  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentType
+2020-11-19 19:35:57.744  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localAddr
+2020-11-19 19:35:57.744  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.parameterMap
+2020-11-19 19:35:57.744  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remoteAddr
+2020-11-19 19:35:57.744  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localPort
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.servletContext
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.remotePort
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.inputStream
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.localName
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.locales
+2020-11-19 19:35:57.745  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.dispatcherType
+2020-11-19 19:35:57.746  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.contentLength
+2020-11-19 19:35:57.746  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.characterEncoding
+2020-11-19 19:35:57.746  WARN 12504 --- [main] o.s.d.n.mapping.Neo4jPersistentProperty  : Owning ClassInfo is null for property: javax.servlet.ServletRequest.asyncContext
+2020-11-19 19:35:57.769  INFO 12504 --- [main] o.s.d.neo4j.mapping.Neo4jMappingContext  : Neo4jMappingContext initialisation completed
+2020-11-19 19:35:58.396  INFO 12504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:35:58.444  WARN 12504 --- [main] ebConfiguration$Neo4jWebMvcConfiguration : spring.data.neo4j.open-in-view is enabled by default.Therefore, database queries may be performed during view rendering. Explicitly configure spring.data.neo4j.open-in-view to disable this warning
+2020-11-19 19:35:59.211  WARN 12504 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-19 19:35:59.296  INFO 12504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 19:36:10.938 ERROR 12504 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:905) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:830) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) [spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:123) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.isEnabled(AbstractDataSourceInitializer.java:74) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.jdbc.AbstractDataSourceInitializer.initialize(AbstractDataSourceInitializer.java:54) [spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_271]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_271]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:849) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 67 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_271]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_271]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_271]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_271]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_271]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_271]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	... 69 common frames omitted
+
+2020-11-19 19:36:10.973  INFO 12504 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-11-19 19:36:10.984  INFO 12504 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-11-19 19:36:10.984  INFO 12504 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.0 created.
+2020-11-19 19:36:10.984  INFO 12504 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-11-19 19:36:10.985  INFO 12504 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-11-19 19:36:10.985  INFO 12504 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-11-19 19:36:10.985  INFO 12504 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.0
+2020-11-19 19:36:10.985  INFO 12504 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@437c4b25
+2020-11-19 19:36:11.014  WARN 12504 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-19 19:36:11.091  INFO 12504 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-11-19 19:36:11.091  INFO 12504 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-11-19 19:36:11.097  INFO 12504 --- [main] per.sc.mg.service.Neo4jServiceTest       : Started Neo4jServiceTest in 15.298 seconds (JVM running for 15.975)
+2020-11-19 19:36:26.412  INFO 12504 --- [main] Driver                                   : Direct driver instance 1394241900 created for server address 192.168.31.64:7687
+2020-11-19 19:38:29.339  INFO 12504 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:38:29.340  INFO 12504 --- [Thread-3] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-11-19 19:38:29.341  INFO 12504 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-11-19 19:38:29.341  INFO 12504 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-11-19 19:38:29.341  INFO 12504 --- [Thread-3] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-11-19 19:38:29.351  INFO 12504 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:38:29.352  INFO 12504 --- [Thread-3] o.n.ogm.drivers.bolt.driver.BoltDriver   : Shutting down Bolt driver org.neo4j.driver.internal.InternalDriver@531a716c 
