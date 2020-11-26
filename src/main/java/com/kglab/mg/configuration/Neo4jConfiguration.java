@@ -8,9 +8,9 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 //@Configuration
-//@EnableNeo4jRepositories(basePackages = "per.sc.mg.repositor")
+//@EnableNeo4jRepositories(basePackages = "com.kglab.mg.repositor")
 //@EnableTransactionManagement
-//@EntityScan(basePackages = "per.sc.mg.entity.po")
+//@EntityScan(basePackages = "com.kglab.mg.entity.po")
 public class Neo4jConfiguration {
 
 //    @Value("${spring.data.neo4j.uri}")

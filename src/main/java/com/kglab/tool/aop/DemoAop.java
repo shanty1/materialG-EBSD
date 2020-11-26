@@ -14,7 +14,7 @@ public class DemoAop {
 
 	private static Logger logger = LoggerFactory.getLogger(DemoAop.class);
 	
-	@Pointcut("execution(public * per.sc.tool.control.common.MainsiteErrorController.handleError(..))")
+	@Pointcut("execution(public * com.kglab.tool.control.common.MainsiteErrorController.handleError(..))")
 	public void pointcut() { }
 	
 	@Before("pointcut()")
